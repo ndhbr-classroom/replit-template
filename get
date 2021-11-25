@@ -1,5 +1,5 @@
 #!/bin/bash
-orgaUrl=https://github.com/ndhbr-classroom/
+orgaUrl=git@github.com:ndhbr-classroom/
 
 # check for parameter
 if [ -z "$1" ]
@@ -9,7 +9,7 @@ else
     printf "Selected exercise: $1\n"
 
     # clone
-    git clone $orgaUrl$1
+    git clone $orgaUrl$1.git
     
     # git clone went wrong, probably enough error message by github
     if [ ! -d "$1" ]; then

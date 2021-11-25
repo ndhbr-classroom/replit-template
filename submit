@@ -1,5 +1,4 @@
 #!/bin/bash
-orgaUrl=https://github.com/ndhbr-classroom/
 
 # check for parameter
 if [ -z "$1" ]
