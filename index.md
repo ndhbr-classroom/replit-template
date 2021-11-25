@@ -36,7 +36,7 @@ kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
   ./get intro-ndhbr
   ```
 
-  *wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.*
+  > wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
 
 </details>
 
