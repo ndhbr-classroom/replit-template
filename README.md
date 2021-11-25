@@ -29,16 +29,11 @@ Mit dem Befehl
 ```
 kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 
-<details>
-  <summary>Beispiel</summary>
-  
-  ```bash
-  ./get intro-ndhbr
-  ```
-
-  > wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
-
-</details>
+> **Beispiel**
+> ```bash
+> ./get intro-ndhbr
+> ```
+> wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
 
 ---
 
