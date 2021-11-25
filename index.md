@@ -100,6 +100,17 @@ kehrst du in den vorherigen Ordner zurück.
 
 Mehr Informationen dazu findest du hier: https://www.howtoforge.de/anleitung/linux-cd-befehl-tutorial-fuer-anfaenger-8-beispiele/
 
+
+## Wie kann ich eine Aufgabe bearbeiten?
+### Schritt 1
+Benutze den Teilnahmelink der jeweiligen Aufgabe. Daraufhin sollte GitHub dir ein Repository erstellen. Das kannst du dir vorstellen, wie wenn dir die Kopie einer Klausur ausgeteilt wird. Diese kannst du unabhängig von anderen Studierenden bearbeiten und schließlich wieder abgeben.
+
+### Schritt 2
+Der Link des Repositories wird dir angezeigt. Der Name sollte aus dem Namen der Aufgabe, sowie aus deinem GitHub Namen bestehen. Gehe jetzt in Replit und lade dir mit dem oben beschriebenen Befehl **./get** (in der Shell) das Repository in deinen Replit-Arbeitsbereich. Nun kannst sollte ein neuer Ordner mit den Dateien der Aufgabe erstellt worden sein. Dort kannst du jetzt die Aufgabe bearbeiten.
+
+### Schritt 3
+Mit dem oben beschriebenen Befehl **./submit** kannst du deine Lösung hochladen.
+
 ---
 
 ## Aufgaben
