@@ -12,7 +12,16 @@ else
     fi
 
     cd $1
-    # TODO: check which programming language
-    npm test
+    lang=`cat .language`
+
+    case $lang in
+     javascript) ## JS
+          npm test
+          ;;
+     *)
+          echo "Did not find valid .language file, did you remove or modify it?"
+          ;;
+    esac
+
     cd ..
 fi

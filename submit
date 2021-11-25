@@ -13,8 +13,11 @@ else
     fi
 
     cd $1
-    git add .
-    git commit -m "Automated commmit"
-    git push -u origin master
+    # if changed something
+    if [[ `git status --porcelain` ]]; then
+        git add .
+        git commit -m "Automated commmit"
+        git push -u origin master
+    fi
     cd ..
 fi

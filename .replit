@@ -1,0 +1,2 @@
+language = "bash"
+run = "echo 'Diesen Knopf brauchst du erstmal nicht'"
