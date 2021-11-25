@@ -1,37 +1,106 @@
-## Welcome to GitHub Pages
+# Willkommen
+Hey! Du willst programmieren lernen? Dann bist du hier genau richtig. Hier wirst du Schritt für Schritt zu deinem ersten selbstprogrammierten Programm hingeführt.
 
-You can use the [editor on GitHub](https://github.com/ndhbr-classroom/replit-template/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Voraussetzungen
+- GitHub Account (github.com - kostenlos)
+- Replit Account (replit.com - kostenlos)
+- Motivation
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Setup
+So, an diesem Punkt solltest du bereits Accounts für die beiden vorher genannten Profile haben. Falls nicht, kannst du ganz einfach mit deiner studentischen E-Mail bei den Plattformen einen gratis Account anlegen.
 
-### Markdown
+Öffne nun replit.com und klicke auf das Plus rechts oben **New Repl**. Bei dem sich öffnenden Dialog, solltest du eine 
+Dies ist ein eigener Arbeitsbereich, nur für dich. In diesem Arbeitsbereich wirst du all deine Programmieraufgaben erledigen.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Klicke auf den Knopf **Import from GitHub** und füge im Feld **GitHub Url** folgenden Link ein https://github.com/ndhbr-classroom/replit-template. Klicke auf **Import** und schon geht's los.
 
-```markdown
-Syntax highlighted code block
+## Aufbau Replit
+Im Linken Teil des Fensters solltest du nun eine Toolbar sehen. Standardmäßig selektiert sollte der Reiter **Files** sein. Wenn alles geklappt hat, solltest du bereits mehrere Dateien sehen.
 
-# Header 1
-## Header 2
-### Header 3
+Im mittleren Teil befindet sich der Editor. Hier wirst du deine eigentliche Programmierarbeit leisten.
 
-- Bulleted
-- List
+Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch eine Shell und eine Console. Du hast die Wahl zwischen Shell und Console, sie basieren standardmäßig beide auf Bash, weshalb dort kein Unterschied für dich sichtbar sein wird.
 
-1. Numbered
-2. List
+## Cheat Sheet für die wichtigsten Kommandos (in Replit)
+### Shell: ./get
+Mit dem Befehl
+```bash
+./get EXERCISE_REPOSITORY_NAME
+```
+kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 
-**Bold** and _Italic_ and `Code` text
+<details>
+  <summary>Beispiel</summary>
+  
+  ```bash
+  ./get intro-ndhbr
+  ```
 
-[Link](url) and ![Image](src)
+  *wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.*
+
+</details>
+
+---
+
+### Shell: ./submit
+Mit dem Befehl
+```bash
+./submit EXERCISE_REPOSITORY_NAME
+```
+kannst du einen Versuch deiner Lösung hochladen.
+
+---
+
+### Shell: ./test
+Mit dem Befehl
+```bash
+./test EXERCISE_REPOSITORY_NAME
+```
+kannst du deinen Versuch überprüfen. Der Test wird automatisiert deine Lösung bewerten.
+
+---
+
+### Shell: Ordner wechseln
+Den Ordner in der Shell wechselst du mit dem Befehl **cd**.
+
+Mit dem Befehl
+```bash
+cd ORDNER
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+wechselst du in einen Ordner. Mit dem Befehl
+```bash
+cd ..
+```
+kehrst du in den vorherigen Ordner zurück.
 
-### Jekyll Themes
+Mehr Informationen dazu findest du hier: https://www.howtoforge.de/anleitung/linux-cd-befehl-tutorial-fuer-anfaenger-8-beispiele/
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ndhbr-classroom/replit-template/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+---
 
-### Support or Contact
+## ‼️ GitHub: Anmeldung? Passwort?
+Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du so einen erstellst und nutzt. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Schritt 1
+Geh in Replit in die Shell und tippe ein:
+```bash
+ssh-keygen
+```
+Klicke dich einfach mit Enter durch die Fragen ohne etwas zu beantworten.
+Wenn du damit fertig bist sollte so etwas Teil der Ausgabe sein:
+```
+Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
+```
+
+### Schritt 2
+Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
+```bash
+cat /home/runner/.ssh/id_rsa.pub
+```
+Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
+Kopiere die Ausgabe in deine Zwischenablage.
+
+### Schritt 3
+Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
+
+Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
