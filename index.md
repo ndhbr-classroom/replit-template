@@ -21,6 +21,35 @@ Im mittleren Teil befindet sich der Editor. Hier wirst du deine eigentliche Prog
 
 Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch eine Shell und eine Console. Du hast die Wahl zwischen Shell und Console, sie basieren standardmäßig beide auf Bash, weshalb dort kein Unterschied für dich sichtbar sein wird.
 
+### GitHub + Replit: Authentifizierung
+Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du so einen erstellst und nutzt. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
+
+#### Schritt 1
+Geh in Replit in die Shell und tippe ein:
+```bash
+ssh-keygen
+```
+Klicke dich einfach mit Enter durch die Fragen ohne etwas zu beantworten.
+Wenn du damit fertig bist sollte so etwas Teil der Ausgabe sein:
+```
+Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
+```
+
+#### Schritt 2
+Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
+```bash
+cat /home/runner/.ssh/id_rsa.pub
+```
+Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
+Kopiere die Ausgabe in deine Zwischenablage.
+
+#### Schritt 3
+Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
+
+Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
+
+---
+
 ## Cheat Sheet für die wichtigsten Kommandos (in Replit)
 ### Shell: ./get
 Mit dem Befehl
@@ -29,11 +58,11 @@ Mit dem Befehl
 ```
 kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 
-> **Beispiel**
-> ```bash
-> ./get intro-ndhbr
-> ```
-> wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
+>**Beispiel**
+>```bash
+>./get intro-ndhbr
+>```
+>wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
 
 ---
 
@@ -73,29 +102,7 @@ Mehr Informationen dazu findest du hier: https://www.howtoforge.de/anleitung/lin
 
 ---
 
-## ‼️ GitHub: Anmeldung? Passwort?
-Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du so einen erstellst und nutzt. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
-
-### Schritt 1
-Geh in Replit in die Shell und tippe ein:
-```bash
-ssh-keygen
-```
-Klicke dich einfach mit Enter durch die Fragen ohne etwas zu beantworten.
-Wenn du damit fertig bist sollte so etwas Teil der Ausgabe sein:
-```
-Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
-```
-
-### Schritt 2
-Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
-```bash
-cat /home/runner/.ssh/id_rsa.pub
-```
-Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
-Kopiere die Ausgabe in deine Zwischenablage.
-
-### Schritt 3
-Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
-
-Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
+## Aufgaben
+### Aufgabe 1: Intro
+Hier geht's los. In dieser Aufgabe wirst du deine ersten Erfahrungen mit der Programmiersprache JavaScript machen.
+>Teilnahmelink: https://classroom.github.com/a/23qpgD3v
