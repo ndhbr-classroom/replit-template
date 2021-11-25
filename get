@@ -7,7 +7,15 @@ then
     printf "Usage $0 <REPOSITORY-NAME>\n"
 else
     printf "Selected exercise: $1\n"
+
+    # clone
     git clone $orgaUrl$1
+    
+    # git clone went wrong, probably enough error message by github
+    if [ ! -d "$1" ]; then
+        exit 1
+    fi
+
     printf "\nYour exercise template was cloned into the folder $1. "
     printf "If you want to reset your task, just delete the folder $1 and run the command again.\n"
 fi
