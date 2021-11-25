@@ -44,7 +44,7 @@ Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
 Kopiere die Ausgabe in deine Zwischenablage.
 
 #### Schritt 3
-Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
+Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** (https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
 
 Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
 
