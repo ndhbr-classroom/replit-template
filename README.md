@@ -108,6 +108,8 @@ Benutze den Teilnahmelink der jeweiligen Aufgabe. Daraufhin sollte GitHub dir ei
 ### Schritt 2
 Der Link des Repositories wird dir angezeigt. Der Name sollte aus dem Namen der Aufgabe, sowie aus deinem GitHub Namen bestehen. Gehe jetzt in Replit und lade dir mit dem oben beschriebenen Befehl **./get** (in der Shell) das Repository in deinen Replit-Arbeitsbereich. Nun kannst sollte ein neuer Ordner mit den Dateien der Aufgabe erstellt worden sein. Dort kannst du jetzt die Aufgabe bearbeiten.
 
+Am Besten wechselst du dann direkt den Ordner in deiner Shell. Mit dem vorher beschriebenen Befehl **cd** kannst du in den Ordner der Aufgabe wechseln.
+
 ### Schritt 3
 Mit dem oben beschriebenen Befehl **./submit** kannst du deine Lösung hochladen.
 
