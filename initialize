@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [[ "$0" != "initialize" ]]; then
-    echo "The script must be called from the script's location"
-    exit 1
-fi
-
 touch ~/.bash_aliases
 pwd=`pwd`
 echo "alias get='bash $pwd/get'" >> ~/.bash_aliases
