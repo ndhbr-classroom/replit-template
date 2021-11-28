@@ -1,0 +1,7 @@
+#!/bin/bash
+
+touch ~/.bash_aliases
+echo "alias get='bash ~/replit-template/get'" >> ~/.bash_aliases
+echo "alias submit='bash ~/replit-template/submit'" >> ~/.bash_aliases
+echo "alias test='bash ~/replit-template/test'" >> ~/.bash_aliases
+source ~/.bashrc
