@@ -1,7 +1,13 @@
 #!/bin/bash
 
+if [[ "$0" != "initialize" ]]; then
+    echo "The script must be called from the script's location"
+    exit 1
+fi
+
 touch ~/.bash_aliases
-echo "alias get='bash ~/replit-template/get'" >> ~/.bash_aliases
-echo "alias submit='bash ~/replit-template/submit'" >> ~/.bash_aliases
-echo "alias test='bash ~/replit-template/test'" >> ~/.bash_aliases
+pwd=`pwd`
+echo "alias get='bash $pwd/get'" >> ~/.bash_aliases
+echo "alias submit='bash $pwd/submit'" >> ~/.bash_aliases
+echo "alias test='bash $pwd/test'" >> ~/.bash_aliases
 source ~/.bashrc
