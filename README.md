@@ -26,18 +26,22 @@ Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue
 Folgende Schritte musst du nur einmal für den Kurs machen.
 
 #### Schritt 1
-Geh in Replit in die Shell und tippe ein:
+Geh in Replit in die Shell und tippe ein. Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab:
+```bash
+./initialize
+```
+#### Schritt 2
+Gib nun folgenden Befehl in der Shell ein:
 ```bash
 ssh-keygen
 ```
-Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab.
 Klicke dich einfach mit Enter durch die Fragen ohne etwas zu beantworten.
 Wenn du damit fertig bist sollte so etwas Teil der Ausgabe sein:
 ```
 Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
 ```
 
-#### Schritt 2
+#### Schritt 3
 Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
 ```bash
 cat /home/runner/.ssh/id_rsa.pub
@@ -45,10 +49,10 @@ cat /home/runner/.ssh/id_rsa.pub
 Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
 Kopiere die Ausgabe in deine Zwischenablage.
 
-#### Schritt 3
+#### Schritt 4
 Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** (https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
 
-#### Schritt 4
+#### Schritt 5
 Nun musst du noch deinen git-User konfigurieren. Gebe hierzu nacheinander folgende Befehle in der Shell ein:
 ```bash
 git config --global user.name 'Dein Name'

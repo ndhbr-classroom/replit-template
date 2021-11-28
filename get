@@ -4,7 +4,7 @@ orgaUrl=git@github.com:ndhbr-classroom/
 # check for parameter
 if [ -z "$1" ]
 then
-    printf "Usage $0 <REPOSITORY-NAME>\n"
+    printf "Usage: get <REPOSITORY-NAME>\n"
 else
     printf "Selected exercise: $1\n"
 
