@@ -2,16 +2,16 @@
 Hey! Du willst programmieren lernen? Dann bist du hier genau richtig. Hier wirst du Schritt für Schritt zu deinem ersten selbstprogrammierten Programm hingeführt.
 
 ## Voraussetzungen
-- GitHub Account (github.com - kostenlos)
-- Replit Account (replit.com - kostenlos)
+- GitHub Account ([github.com](https://github.com/) - kostenlos)
+- Replit Account ([replit.com](https://replit.com/) - kostenlos)
 - Motivation
 
 ## Setup
 So, an diesem Punkt solltest du bereits Accounts für die beiden vorher genannten Profile haben. Falls nicht, kannst du ganz einfach mit deiner studentischen E-Mail bei den Plattformen einen gratis Account anlegen.
 
-Öffne nun replit.com und klicke auf das Plus rechts oben **New Repl**.
+Öffne nun [replit.com](https://replit.com/) und klicke auf das Plus rechts oben **New Repl**.
 
-Tippe auf den Knopf **Import from GitHub** und füge im Feld **GitHub Url** folgenden Link ein https://github.com/ndhbr-classroom/replit-template. Starte daraufhin den **Import**. Schließlich öffnet sich dein neuer Arbeitsbereich. Hier wirst du alle Aufgaben dieses Kurses erledigen.
+Tippe auf den Knopf **Import from GitHub** und füge im Feld **GitHub Url** folgenden Link ein: [Replit Template](https://github.com/ndhbr-classroom/replit-template). Starte daraufhin den **Import**. Schließlich öffnet sich dein neuer Arbeitsbereich. Hier wirst du alle Aufgaben dieses Kurses erledigen.
 
 ## Aufbau Replit
 Im Linken Teil des Fensters solltest du nun eine Toolbar sehen. Standardmäßig selektiert sollte der Reiter **Files** sein. Wenn alles geklappt hat, solltest du bereits mehrere Dateien sehen.
@@ -61,7 +61,7 @@ Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
 Kopiere die Ausgabe in deine Zwischenablage.
 
 #### Schritt 3
-Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** (https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
+Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter [SSH-Keys](https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
 
 #### Schritt 4
 Nun musst du noch deinen git-User konfigurieren. Gebe hierzu nacheinander folgende Befehle in der Shell ein:
@@ -78,7 +78,7 @@ Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
 Eine Anleitung, wie du Aufgaben bearbeitest, findest du unten.
 ### Aufgabe 1: Intro
 Hier geht's los. In dieser Aufgabe wirst du deine ersten Erfahrungen mit der Programmiersprache JavaScript machen.
->Teilnahmelink: https://classroom.github.com/a/23qpgD3v
+>Teilnahmelink: [https://classroom.github.com/a/23qpgD3v](https://classroom.github.com/a/23qpgD3v)
 
 ---
 
@@ -130,7 +130,7 @@ cd ..
 ```
 kehrst du in den vorherigen Ordner zurück.
 
-Mehr Informationen dazu findest du hier: https://www.howtoforge.de/anleitung/linux-cd-befehl-tutorial-fuer-anfaenger-8-beispiele/
+Mehr Informationen dazu findest du hier: [Linux Befehle für Anfänger](https://www.howtoforge.de/anleitung/linux-cd-befehl-tutorial-fuer-anfaenger-8-beispiele/)
 
 ## Wie kann ich eine Aufgabe bearbeiten?
 ### Schritt 1
