@@ -77,8 +77,8 @@ Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
 ## Aufgaben
 Eine Anleitung, wie du Aufgaben bearbeitest, findest du unten.
 ### Aufgabe 1: Intro
-Hier geht's los. In dieser Aufgabe wirst du deine ersten Erfahrungen mit der Programmiersprache JavaScript machen.
->Teilnahmelink: [https://classroom.github.com/a/23qpgD3v](https://classroom.github.com/a/23qpgD3v)
+Hier geht's los. In dieser Aufgabe wirst du deine ersten Erfahrungen mit der Programmiersprache Python machen.
+>Teilnahmelink: [https://classroom.github.com/a/qrDGz2lL](https://classroom.github.com/a/qrDGz2lL)
 
 ---
 
