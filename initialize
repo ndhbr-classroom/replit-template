@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Does not work yet"
+exit 1
+
 touch ~/.bash_aliases
 pwd=`pwd`
 echo "alias get='bash $pwd/get'" > ~/.bash_aliases

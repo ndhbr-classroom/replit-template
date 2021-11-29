@@ -23,15 +23,26 @@ Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch 
 ### GitHub + Replit: Authentifizierung
 Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du so einen erstellst und nutzt. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
 
-Folgende Schritte musst du nur einmal für den Kurs machen.
+Folgende Schritte musst du nur einmal für den gesamten Kurs machen.
 
+
+<!--
 #### Schritt 1
 Geh in Replit in die Shell und tippe ein. Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab:
 ```bash
 ./initialize
 ```
+Dieses Kommando initialisiert die Skripte, die du benötigst, um neue Aufgaben zu laden, oder Lösungen hochzuladen.
 #### Schritt 2
 Gib nun folgenden Befehl in der Shell ein:
+```bash
+source ~/.bash_aliases 
+```
+
+Dieser Befehl aktiviert die durch das Initialisierungs-Skript angelegten Befehle.
+-->
+#### Schritt 1
+Geh in Replit in die Shell und tippe folgenden Befehl ein. Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab:
 ```bash
 ssh-keygen
 ```
@@ -41,7 +52,7 @@ Wenn du damit fertig bist sollte so etwas Teil der Ausgabe sein:
 Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
 ```
 
-#### Schritt 3
+#### Schritt 2
 Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
 ```bash
 cat /home/runner/.ssh/id_rsa.pub
@@ -49,10 +60,10 @@ cat /home/runner/.ssh/id_rsa.pub
 Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
 Kopiere die Ausgabe in deine Zwischenablage.
 
-#### Schritt 4
+#### Schritt 3
 Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter **SSH-Keys** (https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
 
-#### Schritt 5
+#### Schritt 4
 Nun musst du noch deinen git-User konfigurieren. Gebe hierzu nacheinander folgende Befehle in der Shell ein:
 ```bash
 git config --global user.name 'Dein Name'
