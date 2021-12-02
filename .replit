@@ -1,2 +1,3 @@
+onBoot="python setup.py"
 language = "bash"
-run = "echo 'Diesen Knopf brauchst du erstmal nicht'"
+run = "source ~/.bash_aliases"
