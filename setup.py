@@ -1,12 +1,13 @@
 import os
 
 # Write bash aliases
-file_path = os.path.realpath(__file__)
-f = open("../.bash_aliases", "w")
+file_path = os.path.realpath(os.path.dirname(__file__))
+f = open("../.custom_bashrc", "w")
 f.writelines([
-    "alias get='bash %s/get'" % file_path,
+    "PS1=\"\e[0;32mOTH-Console\e[0m> \""
+    "\nalias get='bash %s/get'" % file_path,
     "\nalias submit='bash %s/submit'" % file_path,
-    "\nalias test='bash %s/test'" % file_path
+    "\nalias check='bash %s/check'" % file_path
 ])
 f.close()
 
@@ -20,11 +21,17 @@ except OSError:
   print ("Creation of the directory %s failed" % ssh_path)
 else:
   # Private ssh key
-  f = open("%s/id_rsa" % ssh_path, "w")
-  f.write(os.getenv("private_ssh_key"))
+  private_ssh_key_path = "%s/id_rsa" % ssh_path
+  f = open(private_ssh_key_path, "w")
+  f.write(os.getenv("private_ssh_key") or "")
   f.close()
+  os.chmod(private_ssh_key_path, 0o400)
 
   # Public ssh key
-  f = open("%s/id_rsa.pub" % ssh_path, "w")
-  f.write(os.getenv("public_ssh_key"))
+  public_ssh_key_path = "%s/id_rsa.pub" % ssh_path
+  f = open(public_ssh_key_path, "w")
+  f.write(os.getenv("public_ssh_key") or "")
   f.close()
+  os.chmod(public_ssh_key_path, 0o400)
+
+  print("Starting OTH-Console...\nYou now can use the commands get, check and submit.")

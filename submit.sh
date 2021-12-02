@@ -3,7 +3,7 @@
 # check for parameter
 if [ -z "$1" ]
 then
-    printf "Usage: submit EXERCISE_NAME\n"
+    printf "Usage: submit <REPOSITORY-NAME>\n"
 else
     # check wether folder exists
     if [ ! -d "$1" ]; then
