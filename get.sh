@@ -1,5 +1,6 @@
 #!/bin/bash
-orgaUrl=git@github.com:ndhbr-classroom/
+script_path=`dirname $(realpath $0)`
+orga_url=git@github.com:ndhbr-classroom/
 
 # check for parameter
 if [ -z "$1" ]
@@ -9,10 +10,11 @@ else
     printf "Selected exercise: $1\n"
 
     # clone
-    git clone $orgaUrl$1.git
+    cd $script_path
+    git clone $orga_url$1.git
     
     # git clone went wrong, probably enough error message by github
-    if [ ! -d "$1" ]; then
+    if [ ! -d "$script_path/$1" ]; then
         exit 1
     fi
 
