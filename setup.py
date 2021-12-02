@@ -5,9 +5,9 @@ file_path = os.path.realpath(os.path.dirname(__file__))
 f = open("../.custom_bashrc", "w")
 f.writelines([
     "PS1=\"\e[0;32mOTH-Console\e[0m> \""
-    "\nalias get='bash %s/get'" % file_path,
-    "\nalias submit='bash %s/submit'" % file_path,
-    "\nalias check='bash %s/check'" % file_path
+    "\nalias get='bash %s/get.sh'" % file_path,
+    "\nalias submit='bash %s/submit.sh'" % file_path,
+    "\nalias check='bash %s/check.sh'" % file_path
 ])
 f.close()
 
