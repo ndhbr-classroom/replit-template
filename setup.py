@@ -34,4 +34,11 @@ else:
   f.close()
   os.chmod(public_ssh_key_path, 0o600)
 
-  print("Starting OTH-Console...\nYou now can use the commands get, check and submit.")
+  print("Starting OTH-Console...")
+  # Missing SSH key warning
+  # TODO: we may generate a key pair for the user
+  if os.getenv("public_ssh_key") == None:
+    print("Warning: public_ssh_key not set (secrets tab)")
+  if os.getenv("private_ssh_key") == None:
+    print("Warning: private_ssh_key not set (secrets tab)")
+  print("\nYou now can use the commands get, check and submit.")
