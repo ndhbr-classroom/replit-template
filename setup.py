@@ -25,13 +25,13 @@ else:
   f = open(private_ssh_key_path, "w")
   f.write(os.getenv("private_ssh_key") or "")
   f.close()
-  os.chmod(private_ssh_key_path, 0o400)
+  os.chmod(private_ssh_key_path, 0o600)
 
   # Public ssh key
   public_ssh_key_path = "%s/id_rsa.pub" % ssh_path
   f = open(public_ssh_key_path, "w")
   f.write(os.getenv("public_ssh_key") or "")
   f.close()
-  os.chmod(public_ssh_key_path, 0o400)
+  os.chmod(public_ssh_key_path, 0o600)
 
   print("Starting OTH-Console...\nYou now can use the commands get, check and submit.")
