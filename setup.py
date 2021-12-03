@@ -34,8 +34,6 @@ else:
   # Private ssh key
   private_ssh_key_path = "%s/id_rsa" % ssh_path
   private_ssh_key = os.getenv("private_ssh_key")
-  private_ssh_key = None
-
   if not private_ssh_key:
     private_ssh_key = key.private_bytes(
       crypto_serialization.Encoding.PEM,
@@ -54,7 +52,6 @@ else:
   # Public ssh key
   public_ssh_key_path = "%s/id_rsa.pub" % ssh_path
   public_ssh_key = os.getenv("public_ssh_key")
-  public_ssh_key = None
   if not public_ssh_key:
     public_ssh_key = key.public_key().public_bytes(
       crypto_serialization.Encoding.OpenSSH,
