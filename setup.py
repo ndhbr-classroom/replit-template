@@ -40,7 +40,7 @@ else:
       crypto_serialization.NoEncryption()
     )
   f = open(private_ssh_key_path, "w")
-  f.write(private_ssh_key or "")
+  f.write(private_ssh_key.decode("utf-8") or "")
   f.close()
   os.chmod(private_ssh_key_path, 0o600)
 
@@ -53,7 +53,7 @@ else:
       crypto_serialization.PublicFormat.OpenSSH
     )
   f = open(public_ssh_key_path, "w")
-  f.write(public_key or "")
+  f.write(public_key.decode("utf-8") or "")
   f.close()
   os.chmod(public_ssh_key_path, 0o600)
 
