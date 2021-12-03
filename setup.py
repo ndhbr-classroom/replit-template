@@ -40,7 +40,7 @@ else:
       crypto_serialization.PrivateFormat.PKCS8,
       crypto_serialization.NoEncryption()
     )
-  private_ssh_key = private_ssh_key.decode("UTF-8")
+    private_ssh_key = private_ssh_key.decode("UTF-8")
   f = open(private_ssh_key_path, "w")
   f.write(private_ssh_key or "")
   f.close()
@@ -54,7 +54,7 @@ else:
       crypto_serialization.Encoding.OpenSSH,
       crypto_serialization.PublicFormat.OpenSSH
     )
-  public_ssh_key = public_ssh_key.decode("utf-8")
+    public_ssh_key = public_ssh_key.decode("utf-8")
   f = open(public_ssh_key_path, "w")
   f.write(public_ssh_key or "")
   f.close()
