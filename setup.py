@@ -57,6 +57,14 @@ else:
   f.close()
   os.chmod(public_ssh_key_path, 0o600)
 
+  # Environment
+  f = open("%s/.env" %file_path, "w")
+  f.writelines([
+    "public_ssh_key=\"%s\"" % public_ssh_key,
+    "\nprivate_ssh_key=\"%s\"" % private_ssh_key
+  ])
+  f.close()
+
   print("Starting OTH-Console...")
   # Missing SSH key warning
   # TODO: we may generate a key pair for the user
