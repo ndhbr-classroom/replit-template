@@ -17,9 +17,11 @@ else
 
     case $lang in
      javascript) ## JS
+          npm install
           npm test
           ;;
      python) ## Python
+          pip3 install pytest
           pytest
           ;;
      *)
