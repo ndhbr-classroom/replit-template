@@ -12,7 +12,8 @@ f.writelines([
     "\nPS1=\"\e[0;32mOTH-Console\e[0m:\w> \""
     "\nalias get='bash %s/get.sh'" % file_path,
     "\nalias submit='bash %s/submit.sh'" % file_path,
-    "\nalias check='bash %s/check.sh'" % file_path
+    "\nalias check='bash %s/check.sh'" % file_path,
+    "\nalias github='python %s/github_key.py'" % file_path
 ])
 f.close()
 
