@@ -44,7 +44,6 @@ else:
     else:
         private_ssh_key = bytes(private_ssh_key, 'utf-8')
         private_ssh_key = private_ssh_key.decode('unicode_escape')
-    print(private_ssh_key)
     f = open(private_ssh_key_path, "w")
     f.write(private_ssh_key or "")
     f.close()
