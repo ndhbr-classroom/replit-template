@@ -1,3 +1,8 @@
 import os
 print("Copy and paste the following SSH-Key to your GitHub-Account (https://github.com/settings/ssh/new#):")
-print(os.getenv("public_ssh_key"))
+
+try:
+    f = open("../.ssh/id_rsa.pub", "r")
+    print(f.read())
+except OSError:
+    print("--- KEY NOT FOUND, TRY TO RERUN THE APP ---")
