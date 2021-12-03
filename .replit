@@ -1,3 +1,2 @@
-onBoot="python setup.py"
 language = "bash"
 run = "python setup.py && bash --rcfile ../.custom_bashrc"
