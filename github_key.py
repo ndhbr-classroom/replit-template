@@ -3,6 +3,6 @@ print("Copy and paste the following SSH-Key to your GitHub-Account (https://gith
 
 try:
     f = open("../.ssh/id_rsa.pub", "r")
-    print(f.read())
+    print("%s\n" % f.read())
 except OSError:
     print("--- KEY NOT FOUND, TRY TO RERUN THE APP ---")
