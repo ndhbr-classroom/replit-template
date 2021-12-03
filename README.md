@@ -18,7 +18,7 @@ Im Linken Teil des Fensters solltest du nun eine Toolbar sehen. Standardmäßig 
 
 Im mittleren Teil befindet sich der Editor. Hier wirst du deine eigentliche Programmierarbeit leisten.
 
-Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch eine Shell und eine Console. Du hast die Wahl zwischen Shell und Console, sie basieren standardmäßig beide auf Bash, weshalb dort kein Unterschied für dich sichtbar sein wird.
+Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch eine Shell und eine Console. Du wirst später einfach den **Run-Knopf** betätigen und dann in der **OTH-Console** arbeiten.
 
 ### GitHub + Replit: Authentifizierung
 Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du so einen erstellst und nutzt. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
@@ -53,7 +53,7 @@ Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
 ```
 
 #### Schritt 2
-Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
+Nun musst du deinen Public und Private Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
 ```bash
 cat /home/runner/.ssh/id_rsa.pub
 ```

@@ -13,6 +13,7 @@ else
     fi
 
     cd $script_path/$1
+
     # if changed something
     if [[ `git status --porcelain` ]]; then
         git add .
