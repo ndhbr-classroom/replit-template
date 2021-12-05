@@ -1,2 +1,2 @@
 language = "bash"
-run = "python setup.py && bash --rcfile ../.custom_bashrc"
+run = "python node_modules/setup.py && bash --rcfile ../.custom_bashrc"
