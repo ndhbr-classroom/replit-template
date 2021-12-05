@@ -18,49 +18,30 @@ Im Linken Teil des Fensters solltest du nun eine Toolbar sehen. Standardmäßig 
 
 Im mittleren Teil befindet sich der Editor. Hier wirst du deine eigentliche Programmierarbeit leisten.
 
-Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch eine Shell und eine Console. Du hast die Wahl zwischen Shell und Console, sie basieren standardmäßig beide auf Bash, weshalb dort kein Unterschied für dich sichtbar sein wird.
+Im rechten Teil befindet sich neben der Vorschau dieser Markdown-Anleitung auch eine Shell und eine Console. Du wirst später einfach den **Run-Knopf** betätigen und dann in der **OTH-Console** arbeiten.
+
+### OTH-Console
+Du wirst sehr viel in der OTH-Console arbeiten. Diese startest du über den grünen **Run-Knopf** oben in der Mitte.
 
 ### GitHub + Replit: Authentifizierung
-Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du so einen erstellst und nutzt. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
+Um private Projekte, auf die du Zugriff hast, in Replit zu importieren oder neue Lösungen dafür hochzuladen, musst du dich bei GitHub authentifizieren. Dies geht jedoch nicht einfach mit Username/Password. Das wäre auch zu umständlich bei jedem Kommando dich neu einzuloggen. Dies funktioniert über SSH-Keys. Im Folgenden wird dir erklärt, wie du dies einrichtest. Gerne kannst du dich selbst im Internet weiter über das Thema informieren.
 
 Folgende Schritte musst du nur einmal für den gesamten Kurs machen.
 
-
-<!--
 #### Schritt 1
-Geh in Replit in die Shell und tippe ein. Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab:
-```bash
-./initialize
-```
-Dieses Kommando initialisiert die Skripte, die du benötigst, um neue Aufgaben zu laden, oder Lösungen hochzuladen.
-#### Schritt 2
-Gib nun folgenden Befehl in der Shell ein:
-```bash
-source ~/.bash_aliases 
-```
-
-Dieser Befehl aktiviert die durch das Initialisierungs-Skript angelegten Befehle.
--->
-#### Schritt 1
-Geh in Replit in die Shell und tippe folgenden Befehl ein. Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab:
-```bash
-ssh-keygen
-```
-Klicke dich einfach mit Enter durch die Fragen ohne etwas zu beantworten.
-Wenn du damit fertig bist sollte so etwas Teil der Ausgabe sein:
-```
-Your public key has been saved in /home/runner/.ssh/id_rsa.pub.
-```
+Starte die **OTH-Console** mit dem grünen **Run-Knopf**. Nun sollte sich der `Console`-Reiter öffnen.
 
 #### Schritt 2
-Nun musst du deinen Public Key auslesen. Nimm den ausgegebenen Pfad und kopiere folgendes in die Shell:
+Wir haben bereits alles für dich vorbereitet. Gib in der **OTH-Console** folgenden Befehl ein:
 ```bash
-cat /home/runner/.ssh/id_rsa.pub
+github
 ```
-Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
-Kopiere die Ausgabe in deine Zwischenablage.
+>Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab
 
 #### Schritt 3
+Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
+Kopiere den Schlüssel der Ausgabe in deine Zwischenablage.
+
 Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter [SSH-Keys](https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
 
 #### Schritt 4
@@ -76,48 +57,53 @@ Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
 
 ## Aufgaben
 Eine Anleitung, wie du Aufgaben bearbeitest, findest du unten.
+
 ### Aufgabe 1: Intro
 Hier geht's los. In dieser Aufgabe wirst du deine ersten Erfahrungen mit der Programmiersprache Python machen.
->Teilnahmelink: [https://classroom.github.com/a/qrDGz2lL](https://classroom.github.com/a/qrDGz2lL)
+>Teilnahmelink: [01 Intro](https://classroom.github.com/a/NhB7RLNP)
+
+### Aufgabe 2: Mario
+Gegen Ende von Welt 1-1 in Nintendos Super Mario Brothers muss Mario eine rechts ausgerichtete Pyramide aus Blöcken erklimmen. Deine Aufgabe ist es diese Pyramide nachzubauen.
+>Teilnahmelink: [02 Mario](https://classroom.github.com/a/eknnWrje)
 
 ---
 
 ## Cheat Sheet für die wichtigsten Kommandos (in Replit)
-### Shell: ./get
+### OTH-Console: get
 Mit dem Befehl
 ```bash
-./get EXERCISE_REPOSITORY_NAME
+get EXERCISE_REPOSITORY_NAME
 ```
 kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 
 >**Beispiel**
 >```bash
->./get intro-ndhbr
+>get intro-ndhbr
 >```
 >wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
 
 ---
 
-### Shell: ./submit
+### OTH-Console: submit
 Mit dem Befehl
 ```bash
-./submit EXERCISE_REPOSITORY_NAME
+submit EXERCISE_REPOSITORY_NAME
 ```
 kannst du einen Versuch deiner Lösung hochladen.
 
 ---
 
-### Shell: ./test
+### OTH-Console: test
 Mit dem Befehl
 ```bash
-./test EXERCISE_REPOSITORY_NAME
+test EXERCISE_REPOSITORY_NAME
 ```
 kannst du deinen Versuch überprüfen. Der Test wird automatisiert deine Lösung bewerten.
 
 ---
 
-### Shell: Ordner wechseln
-Den Ordner in der Shell wechselst du mit dem Befehl **cd**.
+### OTH-Console: Ordner wechseln
+Den Ordner in der Konsole wechselst du mit dem Befehl **cd**.
 
 Mit dem Befehl
 ```bash
@@ -137,15 +123,13 @@ Mehr Informationen dazu findest du hier: [Linux Befehle für Anfänger](https://
 Benutze den Teilnahmelink der jeweiligen Aufgabe. Daraufhin sollte GitHub dir ein Repository erstellen. Das kannst du dir vorstellen, wie wenn dir die Kopie einer Klausur ausgeteilt wird. Diese kannst du unabhängig von anderen Studierenden bearbeiten und schließlich wieder abgeben.
 
 ### Schritt 2
-Der Link des Repositories wird dir angezeigt. Der Name sollte aus dem Namen der Aufgabe, sowie aus deinem GitHub Namen bestehen. Gehe jetzt in Replit und lade dir mit dem oben beschriebenen Befehl **./get** (in der Shell) das Repository in deinen Replit-Arbeitsbereich. Nun kannst sollte ein neuer Ordner mit den Dateien der Aufgabe erstellt worden sein. Dort kannst du jetzt die Aufgabe bearbeiten.
+Der Link des Repositories wird dir angezeigt. Der Name sollte aus dem Namen der Aufgabe, sowie aus deinem GitHub Namen bestehen. Gehe jetzt in Replit und lade dir mit dem oben beschriebenen Befehl `get` (in der OTH-Console) das Repository in deinen Replit-Arbeitsbereich. Nun kannst sollte ein neuer Ordner mit den Dateien der Aufgabe erstellt worden sein. Dort kannst du jetzt die Aufgabe bearbeiten.
 
-Am Besten wechselst du dann direkt den Ordner in deiner Shell. Mit dem vorher beschriebenen Befehl **cd** kannst du in den Ordner der Aufgabe wechseln.
+Am Besten wechselst du dann direkt den Ordner in deiner Shell. Mit dem vorher beschriebenen Befehl `cd` kannst du in den Ordner der Aufgabe wechseln.
 
 In jedem Aufgaben-Ordner befindet sich immer eine **README.md**-Datei. Dieser Datei kannst du jeweils alle Informationen über die aktuelle Aufgabe entnehmen.
 
-Mit dem Befehl **./test** kannst du deine Lösung testen.
-
->Achtung: Um die Befehle **./get**, **./submit** und **./test** zu benutzen, musst du immer in den Hauptordner deines Arbeitsbereiches zurückkehren (Shell-Befehl: **cd ..**)
+Mit dem Befehl `test` kannst du deine Lösung testen.
 
 ### Schritt 3
-Mit dem oben beschriebenen Befehl **./submit** kannst du deine Lösung hochladen.
+Mit dem oben beschriebenen Befehl `submit` kannst du deine Lösung hochladen.
