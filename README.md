@@ -60,11 +60,11 @@ Eine Anleitung, wie du Aufgaben bearbeitest, findest du unten.
 
 ### Aufgabe 1: Intro
 Hier geht's los. In dieser Aufgabe wirst du deine ersten Erfahrungen mit der Programmiersprache Python machen.
->Teilnahmelink: [https://classroom.github.com/a/qrDGz2lL](https://classroom.github.com/a/qrDGz2lL)
+>Teilnahmelink: [01 Intro](https://classroom.github.com/a/NhB7RLNP)
 
 ### Aufgabe 2: Mario
 Gegen Ende von Welt 1-1 in Nintendos Super Mario Brothers muss Mario eine rechts ausgerichtete Pyramide aus Blöcken erklimmen. Deine Aufgabe ist es diese Pyramide nachzubauen.
->Teilnahmelink: [https://classroom.github.com/a/E9pT6DZq](https://classroom.github.com/a/E9pT6DZq)
+>Teilnahmelink: [02 Mario](https://classroom.github.com/a/eknnWrje)
 
 ---
 
