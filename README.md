@@ -38,7 +38,6 @@ github
 ```
 >Konsolen-Befehle schickst du immer mit der **Enter-Taste** ab
 
-#### Schritt 3
 Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
 Kopiere den Schlüssel der Ausgabe in deine Zwischenablage.
 
@@ -93,10 +92,10 @@ kannst du einen Versuch deiner Lösung hochladen.
 
 ---
 
-### OTH-Console: test
+### OTH-Console: check
 Mit dem Befehl
 ```bash
-test EXERCISE_REPOSITORY_NAME
+check EXERCISE_REPOSITORY_NAME
 ```
 kannst du deinen Versuch überprüfen. Der Test wird automatisiert deine Lösung bewerten.
 
@@ -129,7 +128,7 @@ Am Besten wechselst du dann direkt den Ordner in deiner Shell. Mit dem vorher be
 
 In jedem Aufgaben-Ordner befindet sich immer eine **README.md**-Datei. Dieser Datei kannst du jeweils alle Informationen über die aktuelle Aufgabe entnehmen.
 
-Mit dem Befehl `test` kannst du deine Lösung testen.
+Mit dem Befehl `check` kannst du deine Lösung testen.
 
 ### Schritt 3
 Mit dem oben beschriebenen Befehl `submit` kannst du deine Lösung hochladen.
