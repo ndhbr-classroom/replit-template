@@ -43,12 +43,7 @@ Kopiere den Schlüssel der Ausgabe in deine Zwischenablage.
 
 Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter [SSH-Keys](https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
 
-#### Schritt 4
-Nun musst du noch deinen git-User konfigurieren. Gebe hierzu nacheinander folgende Befehle in der Shell ein:
-```bash
-git config --global user.name 'Dein Name'
-git config --global user.email 'deine@email.adresse'
-```
+Schließlich solltest du noch nach deinem Namen und deiner E-Mail Adresse gefragt werden. Gib hierzu einfach deinen Vornamen + deine studentische E-Mail ein.
 
 Fertig, nun solltest du dich ohne Nachfrage bei GitHub authentifizieren können.
 
