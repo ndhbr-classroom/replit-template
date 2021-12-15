@@ -77,7 +77,7 @@ kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 
 >**Beispiel**
 >```bash
->get intro-ndhbr
+>get 01-intro-ndhbr
 >```
 >wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
 
