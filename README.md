@@ -80,6 +80,9 @@ kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 >get 01-intro-ndhbr
 >```
 >wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
+>
+>In folgender Abbildung siehst du in rot markiert, welcher Teil deiner Assignment-URL dem EXERCISE_REPOSITORY_NAME entspricht (rot markiert):
+>![EXERCISE_REPOSITORY_NAME](node_modules/assets/exercise_name.jpg)
 
 ---
 
