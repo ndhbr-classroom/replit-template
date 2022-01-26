@@ -30,7 +30,11 @@ So, an diesem Punkt solltest du bereits Accounts für die beiden vorher genannte
 
 Öffne nun [replit.com](https://replit.com/) und klicke auf das Plus rechts oben **New Repl**.
 
-Tippe auf den Knopf **Import from GitHub** und füge im Feld **GitHub Url** folgenden Link ein: [https://github.com/ndhbr-classroom/replit-template](https://github.com/ndhbr-classroom/replit-template). Starte daraufhin den **Import**. Schließlich öffnet sich dein neuer Arbeitsbereich. Hier wirst du alle Aufgaben dieses Kurses erledigen.
+Tippe auf den Knopf **Import from GitHub** und füge im Feld **GitHub Url** folgenden Link ein: [https://github.com/ndhbr-classroom/replit-template](https://github.com/ndhbr-classroom/replit-template). Starte daraufhin den **Import**.
+
+![IMPORT_FROM_GITHUB](images/import_from_github.jpg)
+
+Schließlich öffnet sich dein neuer Arbeitsbereich. Hier wirst du alle Aufgaben dieses Kurses erledigen.
 
 ## Aufbau Replit
 Im Linken Teil des Fensters solltest du nun eine Toolbar sehen. Standardmäßig selektiert sollte der Reiter **Files** sein. Wenn alles geklappt hat, solltest du bereits zwei Dateien sehen.
@@ -61,6 +65,8 @@ Jetzt sollte der Dateiinhalt deines Public-Keys ausgegeben worden sein.
 Kopiere den Schlüssel der Ausgabe in deine Zwischenablage (Windows: STRG-C/STRG-V).
 
 Wechsle nun in die Einstellungen von GitHub. Dort sollte es den Reiter [SSH-Keys](https://github.com/settings/keys) geben. Erstelle nun einen neuen Key mit beliebigen Namen (z.B. Replit Zugang) und füge den Key aus deiner Zwischenablage ein.
+
+![GITHUB_SSH_KEY](images/github_ssh_key.jpg)
 
 Schließlich solltest du noch nach deinem Namen und deiner E-Mail Adresse gefragt werden. Gib hierzu einfach deinen Vornamen + deine studentische E-Mail ein.
 
