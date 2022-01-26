@@ -83,7 +83,7 @@ kannst du eine neue Aufgabe in deinen Arbeitsbereich kopieren.
 >wobei ndhbr in dem Fall durch deinen Nutzernamen ersetzt werden muss.
 >
 >In folgender Abbildung siehst du in rot markiert, welcher Teil deiner Assignment-URL dem EXERCISE_REPOSITORY_NAME entspricht (rot markiert):
->![EXERCISE_REPOSITORY_NAME](gh-pages/images/exercise_name.jpg)
+>![EXERCISE_REPOSITORY_NAME](images/exercise_name.jpg)
 
 ---
 
@@ -171,7 +171,7 @@ print('They are not equal')
 ### `check`-Ausgabe verstehen
 Die `check`-Ausgabe kann beim ersten mal lesen, sehr verwirrend sein.
 So kann eine Ausgabe bei Python-Aufgaben beispielsweise aussehen:
-![EXAMPLE_PYTHON_OUTPUT](gh-pages/images/example_pytest_output.png)
+![EXAMPLE_PYTHON_OUTPUT](images/example_pytest_output.png)
 
 Ganz unten siehst du, wie viele Tests funktioniert und wie viele fehlgeschlagen sind. In diesem Beispiel sehen wir, dass eine Aufgabe fehlgeschlagen ist.
 
